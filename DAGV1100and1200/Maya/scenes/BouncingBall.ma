@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: BouncingBall.ma
-//Last modified: Tue, Sep 01, 2026 12:48:01 PM
+//Last modified: Tue, Sep 01, 2026 12:52:10 PM
 //Codeset: UTF-8
 requires maya "2027";
 requires "mtoa" "5.6.2";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202606171832-bee0ff2c7e";
 fileInfo "osv" "Mac OS X 20.5";
-fileInfo "UUID" "AA9BA493-104D-0E59-5E21-EA95CB9F1F5D";
+fileInfo "UUID" "B78F2F8C-2248-9988-583B-08B18FCA36C5";
 createNode transform -s -n "persp";
 	rename -uid "5D80E72D-D445-9F0B-DC39-D7856610456A";
 	setAttr ".v" no;
@@ -91,20 +91,20 @@ createNode mesh -n "pSphereShape1" -p "pSphere1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "9995AEA6-DB44-C84C-851A-A99D568C16A0";
+	rename -uid "C5B601E7-CC4D-0F71-8B56-9D9866459129";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9594C00D-9849-127D-8DFE-09862417E23C";
+	rename -uid "E7F69D0E-0A4C-71DA-FEED-EAA235D63437";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4AD6F4B2-114C-2E78-56F9-0E980C13F782";
+	rename -uid "AE66C957-8A44-CFFC-AC9A-7BBE3A8CD5FB";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "AF469305-144D-2AC3-6EF7-1BA3D2633D65";
+	rename -uid "B16DF969-5C4D-11BA-8DCB-E28401096B5E";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "E7485109-114A-B44A-A994-849391784BFC";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "B5D16E6B-BB4E-0FE5-1591-A1B18CD77B11";
+	rename -uid "926829F5-FD4F-7785-C5A8-D0A1CD590276";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3ABEA316-0F46-CFC4-814D-BE9CDA470414";
 	setAttr ".g" yes;
@@ -174,6 +174,8 @@ createNode animCurveTU -n "pSphere1_visibility";
 		5 5 5 5;
 	setAttr -s 12 ".kox[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
 	setAttr -s 12 ".koy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
+	setAttr -s 12 ".ots[0:11]"  9 9 9 9 9 9 9 9 
+		9 9 9 9;
 createNode animCurveTL -n "pSphere1_translateX";
 	rename -uid "A162F3E7-C94D-90EF-E46F-CBAFBDE95A01";
 	setAttr ".tan" 18;
@@ -229,8 +231,8 @@ createNode animCurveTU -n "pSphere1_scaleZ";
 	setAttr -s 12 ".ktv[0:11]"  1 1 10 1 11 1 15 1 20 1 28 1 29 1 32 1 36 1
 		 40 1 42 1 44 1;
 select -ne :time1;
-	setAttr ".o" 77;
-	setAttr ".unw" 77;
+	setAttr ".o" 72;
+	setAttr ".unw" 72;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
