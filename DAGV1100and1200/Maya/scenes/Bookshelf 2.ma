@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: Bookshelf 2.ma
-//Last modified: Mon, Sep 14, 2026 11:18:28 PM
+//Last modified: Mon, Sep 14, 2026 11:26:06 PM
 //Codeset: UTF-8
 requires maya "2027";
 requires "mtoa" "5.6.2";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202606171832-bee0ff2c7e";
 fileInfo "osv" "Mac OS X 20.5";
-fileInfo "UUID" "9D7E6491-7A4E-4D71-5244-9AA9EB96F11E";
+fileInfo "UUID" "B15367F8-344E-C2DD-9CD6-A1927C55AA9D";
 createNode transform -s -n "persp";
 	rename -uid "0529DF33-A746-7B89-25B5-20BC3A7FE859";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -61.019689507856064 55.435540279683856 35.514307359505707 ;
-	setAttr ".r" -type "double3" -38.138352729447817 300.19999999999209 -6.3229196034292887e-15 ;
+	setAttr ".t" -type "double3" -56.954229324432191 33.676830887527899 8.2072298211605741 ;
+	setAttr ".r" -type "double3" -30.338352729452836 278.19999999998197 -1.1149752714401567e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "478774F9-FE41-2457-D734-7E9C76F9EFA2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 89.765069269503329;
+	setAttr ".coi" 66.672871528851147;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -78,7 +78,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "book";
 	rename -uid "44748DD5-E24D-5B51-94CB-569940387C06";
-	setAttr ".t" -type "double3" -1.0990148267047006 5.3116322257642246 -6.2195734766775086 ;
+	setAttr ".t" -type "double3" -1.0990148267047006 5.3116322257642246 -6.2755671424453805 ;
 	setAttr ".r" -type "double3" 21.751707603694904 180 0 ;
 	setAttr ".s" -type "double3" 2.8830860069710424 3.9927316689560324 1 ;
 createNode mesh -n "bookShape" -p "book";
