@@ -1,0 +1,10 @@
+using UnityEngine;
+
+public class TriggerLogger : MonoBehaviour
+{
+    private void OnTriggerEnter(Collider other)
+    {
+        // Logs a message to Unity's Console when something enters
+        Debug.Log("Triggered!");
+    }
+}
